@@ -32,7 +32,7 @@ public class ToolCallingIT {
     void should_executeSum_when_prompted(){
         var chatClient = ChatClient.builder(openAiChatModel)
                 .defaultSystem("Você é um matemático")
-                .defaultTools(new MathTools())
+                .defaultTools(new MathTools( ))
                 .build();
 
         var response = chatClient.prompt("Some 10 mais 20. Depois subtraia 30 do resultado anterior. Exiba apenas o resultado final sem explicações")
