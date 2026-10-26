@@ -35,7 +35,7 @@ public class TransactionController {
     public TransactionController(PersistTransactionUseCase persistTransactionUseCase,
                                  ListTransactionsByCategoryUseCase listTransactionsByCategoryUseCase,
                                  TranscriptionModel transcriptionModel,
-                                 @Value("classpath:/prompts/system-message.st") Resource systemPrompt,
+                                 @Value("classpath:/prompts/system.st") Resource systemPrompt,
                                  ChatClient.Builder chatClientBuilder,
                                  TextToSpeechModel textToSpeechModel) throws IOException {
         this.persistTransactionUseCase = persistTransactionUseCase;
